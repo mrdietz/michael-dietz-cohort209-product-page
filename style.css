@@ -9,9 +9,18 @@ body {
   font-family: Verdana, sans-serif;
 }
 
-#page-wrapper {
-  position: relative;
-} 
+.container-fluid {
+  border: solid 2px red;
+}
+
+.row {
+  border: solid 2px blue;
+}
+
+.col-2,
+.col-10 {
+  border: dashed 2px green;
+}
 
 li {
   list-style: none;
@@ -34,7 +43,7 @@ header {
   background-color: #fff;
 }
 
-.logo {
+#logo {
   width: 60vw;
 }
 
@@ -45,7 +54,7 @@ nav > ul {
   justify-content: space-around;
 }
 
-.logo > img {
+#logo > img {
   width: 100%;
   height: 100%;
   max-width: 200px;
