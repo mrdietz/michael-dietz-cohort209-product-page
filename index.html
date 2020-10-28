@@ -9,60 +9,104 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container">
+
       <div class="row">
-          <div class="col">
-            <nav id="nav-bar">
-              <ul>
-                <li><a class="nav-link" href="#top3">Top 3 Spatulas!</a></li>
-                <li><a class="nav-link" href="#commercial">Latest Commercial!!</a></li>
-                <li><a class="nav-link" href="#visit">Come visit us!!!</a></li>
-              </ul>
-            </nav>
-          </div>
-      </div>        
-      <div class="row">
-        <div class="jumbotron">
+        <div class="col jumbotron d-flex flex-column align-items-center">
+          <h1>"There's just one place to go for all your spatula needs..."</h1>
           <img src="images/logo.png" alt="Company Logo">
         </div>
       </div>
+
+      <div class="row d-flex flex-column align-items-center">
+        <h1>Welcome to SPATULA CITY!</h1>
+        <form id="form" action="#">
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+          <input type="submit" id="submit" value="Submit"></button>
+        </form>
+      </div>
+
       <div class="row">
-        <section id="main">
-          <h1>Welcome to SPATULA CITY!</h1>
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" name="email" placeholder="Email Address" required>
-            <input type="submit" id="submit" value="Submit"></button>
-          </form>
-        </section>
-  
-        <section id="top3">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
           <h3>Here's our top 3 selling spatulas this week!</h3>
-            <div id="top3img">
-              <img src="images/black-plas-spat.jpg" alt="Black Plastic Spatula">
-              <img src="images/white-rubber-spat.jpg" alt="White Rubber Spatula">
-              <img src="images/metal-wood-spat.jpg" alt="Metal Wood Spatula">
-            </div>  
-        </section>
-  
-        <section id="commercial">
-          <h3>Check out our latest commercial!</h3>
-          <iframe
-          id="video"
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/4BUDwj_mXKE" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </div>
+          <div class="card-deck">
+            <div class="card">
+              <img src="images/black-plas-spat.jpg" class="card-img-top" alt="Black Plastic Spatula" id="top3img">
+              <div class="card-body">
+                <h5 class="card-title">Black Skinny</h5>
+                <p class="card-text">Flexible and nimble, this spatula can get into the tightest of spaces to make your flipping quick and clean.</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-outline-light">Click to order one today!</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/white-rubber-spat.jpg" class="card-img-top" alt="White Rubber Spatula" id="top3img">
+              <div class="card-body">
+                <h5 class="card-title">Classic Rubber</h5>
+                <p class="card-text">Every kitchen needs one to scrape that cake batter out of the bowl...and into your mouth.</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-outline-light">Click to replace that old stinky one!</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/metal-wood-spat.jpg" class="card-img-top" alt="Metal Wood Spatula" id="top3img">
+              <div class="card-body">
+                <h5 class="card-title">Sturdy Comfort</h5>
+                <p class="card-text">Your dad's favorite spatula. A large flat blade makes flipping burgers a breeze. A great weapon as well!</p>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-outline-light">Click to make your father proud!</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md d-flex flex-column justify-content-center align-items-center">
+          <img src="images/sy-greenbloom.jpg" alt="Sy Greenbloom, President">
+          <small>Sy Greenbloom, President of Spatula City</small>
+        </div>
+        <div class="col-md d-flex justify-content-start align-items-center">
+          <h2>"I like their spatulas so much, <br>I bought the company."</h2>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <section id="commercial">
+            <h3>Check out our latest commercial!</h3>
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/DpsMGpMIqNk" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
-        </section>
-  
-        <section id="visit">
-          <h3>Come visit us!</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5279.497204261738!2d-101.04412510918824!3d42.04280287841324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877820c05b6f8b35%3A0x6e03dbb23c8eaa2d!2sMullen%2C%20NE%2069152!5e0!3m2!1sen!2sus!4v1601102127964!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </section>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <section id="visit">
+            <h3>Come visit us!</h3>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5279.497204261738!2d-101.04412510918824!3d42.04280287841324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x877820c05b6f8b35%3A0x6e03dbb23c8eaa2d!2sMullen%2C%20NE%2069152!5e0!3m2!1sen!2sus!4v1601102127964!5m2!1sen!2sus"
+             width="600" 
+             height="450" 
+             frameborder="0" 
+             style="border:0;" 
+             allowfullscreen="" 
+             aria-hidden="false" 
+             tabindex="0">
+            </iframe>
+          </section>
+        </div>
       </div>
     </div>
 </body>
